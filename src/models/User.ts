@@ -29,6 +29,10 @@ const userSchema = new Schema({
     required: true,
     unique: true,
   },
+  refreshToken: {
+    type: String,
+    required: true,
+  },
   questions: [questionsSchema],
 });
 
