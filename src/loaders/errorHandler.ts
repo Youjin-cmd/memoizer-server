@@ -1,10 +1,6 @@
 import { Express, Request, Response, NextFunction } from "express";
 import createError from "http-errors";
-
-interface Error {
-  status?: number;
-  message?: string;
-}
+import { Error } from "../types/type";
 
 async function errorHandlerLoader(app: Express) {
   app.use((req: Request, res: Response, next: NextFunction) => {

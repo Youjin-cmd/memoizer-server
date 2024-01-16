@@ -20,7 +20,7 @@ const questionsSchema = new Schema({
 });
 
 const userSchema = new Schema({
-  name: {
+  username: {
     type: String,
     required: true,
   },
@@ -31,7 +31,6 @@ const userSchema = new Schema({
   },
   refreshToken: {
     type: String,
-    required: true,
   },
   questions: [questionsSchema],
 });

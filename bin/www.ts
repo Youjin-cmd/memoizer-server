@@ -1,11 +1,7 @@
 import debug from "debug";
 import http from "http";
 import app from "../src/app";
-
-interface Error {
-  syscall: string;
-  code: string;
-}
+import { Error } from "../src/types/type";
 
 const normalizePort = (val: string | number): string | number | boolean => {
   const port = parseInt(`${val}`, 10);
